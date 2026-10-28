@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #b8dbff;
+    margin: 0;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #3b5177;
+    margin-bottom: 25px;
+}
+
+form {
+    width: 80%;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+td {
+    border: 1px solid #d6d6d6;
+    padding: 12px;
+}
+
+strong {
+    color: #618eb7;
+}
+
+input[type="text"], select, textarea {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #b5d3d0;
+    font-size: 14px;
+}

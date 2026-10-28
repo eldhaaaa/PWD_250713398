@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1=strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formulir Pendaftaran Seminar FBE</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>    
+<body>
+    <h1>Formulir Pendaftaran Seminar FBE</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+        <table cellspacing="4" cellpadding ="4" border="1"
+                style="border-collapse:collapse; width:100%;">
+                <tr>
+                    <td>
+                        <label for="nama"><strong>Nama Lengkap</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="nama" name="nama" size="30" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="no"><strong>Nomor Ponsel</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="no" name="no" size="30" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="nim"><strong>NIM</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="nim" name="nim" size="30" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="prodi"><strong>Program Studi</strong></label>
+                    </td>
+                    <td>
+                        <select id="prodi" name="prodi" >
+                            <option>Akuntansi</option>
+                            <option>Manajemen</option>
+                            <option>Ekonomi Pembangunan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Jenis Tiket</strong>
+                    </td>
+                    <td>
+                        <input type="radio" id="reguler" name="tiket" value="Reguler" />
+                        <label for="reguler">Reguler</label>
+
+                        <input type="radio" id="vip" name="tiket" value="VIP" />
+                        <label for="vip">VIP</label>
+
+                        <input type="radio" id="online" name="tiket" value="Online" />
+                        <label for="online">Online</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align:top;">
+                        <strong>Topik Seminar</strong>
+                    </td>
+                    <td>
+                        <p>
+                            <input type="checkbox" id="fp" name="topik" value="Financial Planning" />
+                            <label for="fp">Financial Planning</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="IPM" name="topik" value="Investasi dan Pasar Modal" />
+                            <label for="IPM">Investasi dan Pasar Modal</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="digital" name="topik" value="Digital Marketing" />
+                            <label for="digital">Digital Marketing</label>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="jam"><strong>Jam Seminar</strong></label>
+                    </td>
+                    <td>
+                        <select name="jam" id="jam">
+                            <option>08.00 - 10.00</option>
+                            <option>10.00 - 12.00</option>
+                            <option>13.00 - 15.00</option>
+                            <option>15.00 - 17.00</option>
+                            <option>19.00 - 21.00</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align:top;">
+                        <strong>Metode Pembayaran</strong>
+                    </td>
+                    <td>
+                        <p>
+                            <input type="radio" id="qris" name="pembayaran" 
+                                value="QRIS" />
+                            <label for="qris">QRIS</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="transfer" name="pembayaran" 
+                                value="Transfer Bank" />
+                            <label for="transfer">Transfer Bank</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="ewallet" name="pembayaran" 
+                                value="ewallet" />
+                            <label for="ewallet">E-wallet</label>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align:top;">
+                        <label for="pertanyaan">
+                            <strong>Pertanyaan untuk Narasumber</strong>
+                        </label>
+                    </td>
+                    <td>
+                        <textarea name="pertanyaan" id="pertanyaan" rows="8" cols="30"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="bukti"><strong>Bukti Pembayaran</strong></label>
+                    </td>
+                    <td>
+                        <input type="file" id="bukti" name="bukti" accept="image/gif, image/jpeg, image/png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center;">
+                        <input type="submit" name="Kirim Formulir" value="Kirim Formulir" />
+                    </td>
+                </tr>
+        </table>
+    </form>
+</body>
+</html>    
